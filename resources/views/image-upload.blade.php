@@ -20,7 +20,7 @@
     function copyToClipboard() {
         var copyText = document.getElementById("image-url");
         copyText.select();
-        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        copyText.setSelectionRange(0, 99999);
         document.execCommand("copy");
         alert("Ссылка скопирована: " + copyText.value);
     }
